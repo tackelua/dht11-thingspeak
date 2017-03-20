@@ -102,17 +102,22 @@ Lập trình
 	    client.stop();
     }
 
+
 Lưu ý
 =====
-* Tạo channel mới ở ThingSpeak https://thingspeak.com/channels/new
 
+
+* Tạo tài khoản ThingSpeak và `New Channel<https://thingspeak.com/channels/new>`_ để lấy ``channelID`` và ``writeAPIKey``
 .. image:: https://github.com/tackelua/dht11-thingspeak/raw/master/thingspeak-new_channel.JPG
-
-* Chỉnh sửa lại thông tin WiFi và ThingSpeak
-
 .. image:: https://github.com/tackelua/dht11-thingspeak/raw/master/thingspeak-apikey.JPG
 
-* Bạn có thể dùng module DHT11, DHT21 hoặc DHT22 đều được. Chúng cơ bản khác nhau ở dải đo và... giá thành thôi.
-* Chọn module bạn dùng ở dòng ``#define DHTTYPE DHTxx``
-* ``String(temp, 1)`` ép kiểu ``float`` của ``temp`` thành ``String``, làm tròn 1 chữ số sau dấu thập phân.
-  Lệnh in ``%s`` trong ``Serial.printf`` lại không hoạt động với ``String`` nên ta phải chuyển nó về thành con trỏ trỏ đến chuỗi chứa nội dung cần in ``String::c_str()``. Đây chẳng qua là một cách phức tạp hóa vấn đề của mình thôi, các bạn không cần quan tâm cái này, hehe.
+* Đừng quên hỉnh sửa lại thông tin WiFi và ThingSpeak trong code.
+
+* Bạn có thể dùng module ``DHT11``, ``DHT21`` hoặc ``DHT22`` đều được.
+  * Chúng cơ bản khác nhau ở dải đo và... giá thành thôi.
+  * Chọn module bạn dùng ở dòng ``#define DHTTYPE DHTxx``
+
+* ...
+  * ``String(temp, 1)`` ép kiểu ``float`` của ``temp`` thành ``String``, làm tròn 1 chữ số sau dấu thập phân.
+  * Lệnh in ``%s`` trong ``Serial.printf`` lại không hoạt động với ``String`` nên ta phải chuyển nó về thành con trỏ trỏ đến chuỗi chứa nội dung cần in ``String::c_str()``.
+  * Đây chẳng qua là một cách phức tạp hóa vấn đề của mình thôi, các bạn không cần quan tâm cái này, hehe.
