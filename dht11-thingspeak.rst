@@ -20,7 +20,7 @@ Chuẩn bị
 
 Đấu nối
 =======
-
+.. image:: ../_static/projects/dht11-thingspeak/dht11-thingspeak_bb.png
 
 Cài đặt thư viện
 ================
