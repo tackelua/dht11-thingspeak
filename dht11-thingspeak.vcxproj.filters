@@ -16,6 +16,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="dht11-thingspeak.ino" />
+    <None Include="dht11-thingspeak.rst">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.dht11-thingspeak.vsarduino.h">
