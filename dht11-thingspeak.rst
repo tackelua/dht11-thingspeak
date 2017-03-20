@@ -108,11 +108,11 @@ Lưu ý
 
 .. image:: https://github.com/tackelua/dht11-thingspeak/raw/master/thingspeak-new_channel.JPG
 
-* Bạn cần phải chỉnh sửa lại thông tin WiFi và ThingSpeak
+* Chỉnh sửa lại thông tin WiFi và ThingSpeak
 
 .. image:: https://github.com/tackelua/dht11-thingspeak/raw/master/thingspeak-apikey.JPG
 
 * Bạn có thể dùng module DHT11, DHT21 hoặc DHT22 đều được. Chúng cơ bản khác nhau ở dải đo và... giá thành thôi.
-* Chọn module bạn dùng ở dòng `#define DHTTYPE DHTxx`
-* `String(temp, 1)` ép kiểu `float` của `temp` thành `String`, làm tròn 1 chữ số sau dấu thập phân.
-  Lệnh in `%s` trong `Serial.printf` lại không hoạt động với `String` nên ta phải chuyển nó về thành con trỏ trỏ đến chuỗi chứa nội dung cần in `String::c_str()`. Đây chẳng qua là một cách phức tạp hóa vấn đề của mình thôi, các bạn không cần quan tâm cái này, hehe.
+* Chọn module bạn dùng ở dòng ``#define DHTTYPE DHTxx``
+* ``String(temp, 1)`` ép kiểu ``float`` của ``temp`` thành ``String``, làm tròn 1 chữ số sau dấu thập phân.
+  Lệnh in ``%s`` trong ``Serial.printf`` lại không hoạt động với ``String`` nên ta phải chuyển nó về thành con trỏ trỏ đến chuỗi chứa nội dung cần in ``String::c_str()``. Đây chẳng qua là một cách phức tạp hóa vấn đề của mình thôi, các bạn không cần quan tâm cái này, hehe.
