@@ -120,3 +120,4 @@ Lưu ý
   * ``String(temp, 1)`` ép kiểu ``float`` của ``temp`` thành ``String``, làm tròn 1 chữ số sau dấu thập phân.
   * Lệnh in ``%s`` trong ``Serial.printf`` lại không hoạt động với ``String`` nên ta phải chuyển nó về thành con trỏ trỏ đến chuỗi chứa nội dung cần in ``String::c_str()``.
   * Đây chẳng qua là một cách phức tạp hóa vấn đề của mình thôi, các bạn không cần quan tâm cái này, hehe.
+* `Link project<https://github.com/tackelua/dht11-thingspeak>`_
