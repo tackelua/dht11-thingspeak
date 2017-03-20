@@ -104,6 +104,13 @@ Lập trình
 
 Lưu ý
 =====
+* Tạo channel mới ở ThingSpeak https://thingspeak.com/channels/new
+
+.. image:: https://github.com/tackelua/dht11-thingspeak/raw/master/thingspeak-new_channel.JPG
+
+* Bạn cần phải chỉnh sửa lại thông tin WiFi và ThingSpeak
+
+.. image:: https://github.com/tackelua/dht11-thingspeak/raw/master/thingspeak-apikey.JPG
 
 * Bạn có thể dùng module DHT11, DHT21 hoặc DHT22 đều được. Chúng cơ bản khác nhau ở dải đo và... giá thành thôi.
 * Chọn module bạn dùng ở dòng `#define DHTTYPE DHTxx`
